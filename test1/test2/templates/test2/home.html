@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>The employee list for test2 data is  :</h1>
+    {%if test2_list %}
+    <table>
+        <thead>
+            <th>testid</th>
+            <th>name</th>
+            <th>salary</th>
+            <th>mobilenum</th>
+        </thead>
+
+        {% for test2 in test2_list %}
+        <tr>
+            <td>{{test2.test2id}}</td>
+            <td>{{test2.name}}</td>
+            <td>{{test2.salary}}</td>
+            <td>{{test2.mobilenum}}</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+    </table>
+
+    <h1>The employee list for test3 data is  :</h1>
+    {%if test3_list %}
+    <table>
+        <thead>
+            <th>empid</th>
+            <th>empname</th>
+            <th>empsalary</th>
+            <th>empmob</th>
+        </thead>
+
+        {% for test3 in test3_list %}
+        <tr>
+            <td>{{test3.empmob}}</td>
+            <td>{{test3.empid}}</td>
+            <td>{{test3.empsalary}}</td>
+            <td>{{test3.empname}}</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+    </table>
+</body>
+
+</html>
