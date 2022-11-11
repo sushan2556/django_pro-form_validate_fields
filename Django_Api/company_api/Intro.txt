@@ -1,0 +1,57 @@
+What is API (Application Programming INteface)
+It is an interface that allows two programs/softares to interface between them
+
+End user <--> Our application <--> API <--> YOUtube
+with the help of APi, our software is trying to communnicate with Youtube 
+
+when we try to send data to api, it is sent in the format of Json file . It is one type of data format.
+The return response will also be in Json format
+
+with help of JSON , independent communication is done and data is tranfer using Json 
+
+There are many sites which provide Api for us , we will call this API and they will provide the data for us 
+
+HTTP Methods - GET, PUT, DELETE , POST, GET
+
+Identify Resources - which API we will be needing , which all resource we will be using 
+
+End Points - What all will be the end points 
+
+/companies         --   GET     -- this method with get all company details 
+/companies/ID      --   GET     -- This will get single company ID 
+/companies/ID      --   PUT     -- This will Update company ID
+/companies/ID      --   DELETE  -- This will delete company ID
+/companies         --   POST    -- Create new company 
+/companies/ID/emp  --   GET     -- Get all employee of company ID
+
+Above , some urls are same. Important is HTTP method that is used, which identify which method needs to be use
+when we call API, we share some methods with it 
+
+our response will be sent using Json file, and we will recieve the response in Json format 
+Our API will always respond in Json 
+this is called Rest APIs
+
+End points for employee - 
+
+/Employees         --   GET     -- this method with get all employees details 
+/Employees/ID      --   GET     -- This will get single employees ID 
+/Employees/ID      --   PUT     -- This will Update employees ID
+/Employees/ID      --   DELETE  -- This will delete employees ID
+/Employees         --   POST    -- Create new employees 
+
+We will need Python, Django and Django rest framework(DRF)
+Serializer - they will convert data into Json and convert data from json to object
+Views - to accept request 
+Setup URLS - which view function to work , mapping is done 
+test your api - browser and Postman
+
+Nesting in two Resources - 
+http://127.0.0.1:8000/api/v1/companies/1/employees/
+
+Serializer - to convert all model data into json format 
+
+APi link - 
+http://127.0.0.1:8000/api/v1/
+http://127.0.0.1:8000/api/v1/companies
+http://127.0.0.1:8000/api/v1/employees
+http://127.0.0.1:8000/api/v1/companies/1/employees/ 
